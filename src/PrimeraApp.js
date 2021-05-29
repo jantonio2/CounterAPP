@@ -2,7 +2,7 @@
 import PropTypes from 'prop-types';
 
 // FC Functional Components
-const PrimeraApp = ({saludo}) => {
+const PrimeraApp = ({saludo, subtitulo}) => {
   // No se imprime booleanos
   // Concatena los arrays
   // No se puede imprimir objetos
@@ -21,7 +21,7 @@ const PrimeraApp = ({saludo}) => {
       <h1>{saludo}</h1>
       {/* <h1>{JSON.stringify(saludo)}</h1> */}
       {/* <pre>{JSON.stringify(saludo, null, 3)}</pre> */}
-      <p>Mi primera aplicación</p>
+      <p>{subtitulo}</p>
     </>
   );
     
@@ -42,6 +42,10 @@ const PrimeraApp = ({saludo}) => {
 
 PrimeraApp.propTypes = {
   saludo: PropTypes.string.isRequired
+}
+
+PrimeraApp.defaultProps = {
+  subtitulo: 'Soy un subtitulo'
 }
 
 export default PrimeraApp;
