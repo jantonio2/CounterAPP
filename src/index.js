@@ -1,10 +1,11 @@
 import ReactDOM from 'react-dom';
-import PrimeraApp from './PrimeraApp';
+// import PrimeraApp from './PrimeraApp';
 
 import './index.css';
+import CounterApp from './CounterApp';
 
 const divRoot = document.querySelector('#root');
 
 // document.body.append(saludo);
 
-ReactDOM.render(<PrimeraApp saludo = "Hola Mundo" />, divRoot);
+ReactDOM.render(<CounterApp value = {123} />, divRoot);
