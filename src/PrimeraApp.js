@@ -1,7 +1,7 @@
 // import { Fragment } from "react";
 
 // FC Functional Components
-const PrimeraApp = () => {
+const PrimeraApp = ({saludo = 'Hola Mundo'}) => {
   // No se imprime booleanos
   // Concatena los arrays
   // No se puede imprimir objetos
@@ -9,7 +9,7 @@ const PrimeraApp = () => {
   //   nombre: 'Antonio',
   //   edad: 21
   // };
-  const saludo = 'Hola Mundo';
+  // const saludo = 'Hola Mundo';
 
   return (
     <>
