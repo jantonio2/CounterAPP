@@ -3,7 +3,7 @@ import { useState } from 'react';
 
 const CounterApp = ({value}) => {
 
-  const [counter, setCounter] = useState(0);
+  const [counter, setCounter] = useState(value);
 
   // handleAdd
   const handleAdd = () => {
@@ -11,12 +11,24 @@ const CounterApp = ({value}) => {
     // setCounter( (c) => c + 1 );
   };
 
+  // handleReset
+  const handleReset = () => {
+    setCounter(value);
+  };
+
+  // handleReset
+  const handleSubtract = () => {
+    setCounter(counter - 1);
+  };
+
   return (
     <>
       <h1>CounterApp</h1>
       <h2> { counter } </h2>
      {/* Cuando ponemos () nos saldra undefined al renderizar. Se esta pasando como referencia */}
-      <button onClick={handleAdd}>+1</button>
+      <button onClick={handleAdd}>Sumar +1</button>
+      <button onClick={handleReset}>Reset</button>
+      <button onClick={handleSubtract}>Restar -1</button>
     </>
   );
 }
@@ -26,7 +38,7 @@ CounterApp.propTypes = {
 }
 
 CounterApp.defaultProps = {
-  value: 350
+  value: 10
 }
 
 export default CounterApp;
