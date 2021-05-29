@@ -1,7 +1,8 @@
 // import { Fragment } from "react";
+import PropTypes from 'prop-types';
 
 // FC Functional Components
-const PrimeraApp = ({saludo = 'Hola Mundo'}) => {
+const PrimeraApp = ({saludo}) => {
   // No se imprime booleanos
   // Concatena los arrays
   // No se puede imprimir objetos
@@ -10,6 +11,10 @@ const PrimeraApp = ({saludo = 'Hola Mundo'}) => {
   //   edad: 21
   // };
   // const saludo = 'Hola Mundo';
+
+  // if(!saludo){
+  //   throw new Error('El saludo es necesario');
+  // }
 
   return (
     <>
@@ -33,6 +38,10 @@ const PrimeraApp = ({saludo = 'Hola Mundo'}) => {
   //     <p>Mi primera aplicación</p>
   //   </Fragment>
   // );
+}
+
+PrimeraApp.propTypes = {
+  saludo: PropTypes.string.isRequired
 }
 
 export default PrimeraApp;

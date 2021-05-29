@@ -7,5 +7,4 @@ const divRoot = document.querySelector('#root');
 
 // document.body.append(saludo);
 
-// ReactDOM.render(<PrimeraApp saludo="Hola, Soy Goku" />, divRoot);
 ReactDOM.render(<PrimeraApp />, divRoot);
