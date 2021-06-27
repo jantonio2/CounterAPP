@@ -33,7 +33,7 @@ const getUsuarioActivo = ( nombre ) =>({
     username: nombre
 })
 
-const usuarioActivo = getUsuarioActivo('Fernando');
+const usuarioActivo = getUsuarioActivo('Antonio');
 console.log( usuarioActivo );
 
 
