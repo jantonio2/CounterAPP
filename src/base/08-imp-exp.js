@@ -1,7 +1,7 @@
 // import { heroes } from './data/heroes';
 // import { heroes } from './data/heroes';
 // import heroes, { owners } from '../data/heroes';
-import heroes from '../data/heroes';
+import heroes from '../data/heroes'; //Sin las llaves es exportación por defecto
 
 // console.log( owners );
 
